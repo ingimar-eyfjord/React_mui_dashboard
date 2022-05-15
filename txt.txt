@@ -1,0 +1,11 @@
+@azure/msal-react @emotion/react @emotion/styled @fluentui/react @material-ui/core @material-ui/lab @microsoft/mgt @microsoft/mgt-msal-provider
+@microsoft/mgt-react @mui/icons-material @mui/material @testing-library/jest-dom @testing-library/react @testing-library/user-event @types/react
+axios date-fns dotenv file-saver jsonwebtoken jwt-decode moment moment-timezone 
+
+react react-dom react-responsive-masonry
+react-router-dom
+react-scripts
+simplebar-react
+typescript
+web-vitals
+xlsx

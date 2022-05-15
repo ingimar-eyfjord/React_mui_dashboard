@@ -1,0 +1,17 @@
+.env
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+# testing
+/coverage
+# production
+/build
+#server
+/react-express-mysql
+#api
+/api
+Auth-config.ts
+.vscode/
+Emply_form_structure.json
+Emply_master_return_data.json

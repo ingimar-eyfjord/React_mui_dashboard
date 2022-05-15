@@ -1,0 +1,351 @@
+@media screen and (min-width: 0px) {
+  .Working p:nth-child(3) {
+    display: none;
+  }
+
+  .TableBookingsTable {
+    width: 100%;
+    margin-left: 0rem;
+    max-height: 2rem;
+  }
+  .TableBookingsTable td,
+  .TableBookingsTable th {
+    font-size: 1rem;
+    max-height: 2rem;
+  }
+  .ms-Persona-details {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+  .floorPlan {
+    transform: rotate(90deg) scale(2.5, 2.5) !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 70vh;
+    transform-origin: 50% 50%;
+  }
+
+  [isbeforetoday="true"] {
+    pointer-events: none !important;
+  }
+  .customCalendar {
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    text-indent: initial;
+  }
+  .customCalendar th {
+    font-size: var(--Psize);
+    display: table-cell;
+    height: 2rem;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+  }
+
+  .customCalendar tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  .customCalendar td {
+    display: table-cell;
+    border-color: var(--Anchor_Navy);
+    /* border: 1px solid var(--Anchor_Navy); */
+    vertical-align: top;
+    border-top: 0.5px solid var(--Anchor_Navy);
+    position: relative;
+    text-align: center;
+    /* vertical-align: middle; */
+  }
+
+  .Working .CalendarDate {
+    font-size: 14px;
+  }
+  .CalendarDate {
+    font-size: 14px;
+  }
+  /* .WeekNumber {
+    width: 2%;
+  } */
+  .customCalendar td {
+    width: 12.5%;
+    max-width: 12.5%;
+  }
+  .customCalendar td input {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .customCalendar td button {
+    width: 100%;
+  }
+  .littleCalendar td .control-69 {
+    margin-bottom: 0.5rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .nextDaysSelection {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-items: flex-start;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .nextDaysSelection div p {
+    white-space: nowrap;
+  }
+  .nextDaysSelection > div:hover {
+    cursor: pointer;
+  }
+  .nextDaysSelection > div:hover > i,
+  .nextDaysSelection > div:hover > p {
+    color: var(--Primary_Blue);
+  }
+
+  .nextDaysSelection p {
+    padding: 0 10px 0 10px;
+  }
+
+  [issameday="true"] h3:not(.dd) {
+    color: white !important;
+    z-index: 1;
+    position: relative;
+  }
+  [issameday="true"] h3:not(.dd)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Anchor_Navy);
+    border-radius: 50%;
+    margin-top: 3px;
+    z-index: -1;
+  }
+  .littleCalendar {
+    height: 85vh;
+    width: calc(100% - 1rem);
+    margin: auto;
+    overflow-x: hidden;
+  }
+  .selectionCalendar {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .selectionCalendar * {
+    color: var(--Anchor_Navy);
+  }
+  .selectionCalendar p {
+    font-size: calc(var(--Psize) / 1.5);
+  }
+  .selectionCalendar i {
+    font-size: calc(var(--Psize) / 1.5);
+  }
+  .CalendarMonthTitle {
+    font-size: var(--Psize);
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0;
+  }
+  .Working div {
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    margin: 2px 0 2px 0;
+    background-color: var(--Anchor_Navy_10);
+    width: 90%;
+    padding-left: 2px;
+  }
+
+  .Working div::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: var(--Citrine);
+    z-index: 1;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    left: 0;
+  }
+  [isbeforetoday="false"].Working div::before {
+    background-color: var(--Anchor_Navy);
+  }
+
+  .WeekNumber {
+    border-bottom: none;
+    border-top: none;
+    /* width: 5rem; */
+    font-size: calc(var(--Psize) / 2);
+    vertical-align: middle !important;
+  }
+
+  .CalendarBox,
+  .CalendarDate {
+    /* position: absolute; */
+    width: fit-content;
+    margin: auto;
+    font-weight: 500;
+    cursor: pointer !important;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+  td[class="CalendarBox WeekNumber"] {
+    width: 2%;
+  }
+  .CalendarBox {
+    max-width: calc((100% / 7) - 1rem);
+    height: calc((100% / 6));
+    max-height: calc((100% / 6));
+  }
+}
+.CalendarH3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-left: solid;
+  border-bottom: solid;
+  border-top: solid;
+  border: 0.5px solid #dee2e6;
+  /* padding-left: 0.5rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .Working div::before {
+    width: 0.5rem;
+  }
+
+  .Working p:nth-child(3) {
+    display: block;
+  }
+  .floorPlan {
+    transform: unset !important;
+    height: unset !important;
+    transform-origin: unset !important;
+  }
+  .customCalendar {
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    box-sizing: inherit;
+    text-indent: initial;
+    border-spacing: 2px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .customCalendar th {
+    font-size: var(--Psize);
+    display: table-cell;
+    /* border-color: var(--Anchor_Navy); */
+    /* border: 1px solid var(--Anchor_Navy); */
+    /* background-color: var(--Anchor_Navy); */
+    color: var(--Anchor_Navy);
+    height: 2rem;
+    width: fit-content;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+  }
+
+  .customCalendar tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  .Working div {
+    width: 80%;
+    justify-self: center;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+  }
+  .customCalendar td {
+    display: table-cell;
+    border-color: var(--Anchor_Navy);
+    vertical-align: top;
+    border: 0.5px solid #dee2e6;
+    position: relative;
+    text-align: center;
+  }
+  .WeekNumber {
+    width: 2%;
+  }
+
+  .littleCalendar td .control-69 {
+    margin-bottom: 0.5rem;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .littleCalendar {
+    height: 99vh;
+  }
+
+  .selectionCalendar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .selectionCalendar * {
+    color: var(--Anchor_Navy);
+  }
+  .selectionCalendar p {
+    font-size: var(--Psize);
+  }
+  .selectionCalendar i {
+    font-size: var(--Psize);
+  }
+  .CalendarMonthTitle {
+    font-size: var(--Psize);
+    padding: 0 5rem 0 5rem;
+    margin: 0;
+  }
+  table:not(.calendarComponentContainer > table):is(p, .CalendarDate) {
+    font-size: calc(var(--Psize) / 2);
+  }
+}
+
+.Edit_Schedule_Modal .InfoWarning {
+  margin: 1rem auto;
+  color: var(--Thanks);
+  width: fit-content;
+}
+.Edit_Schedule_Modal .floorPlan {
+  width: 65%;
+  margin: auto;
+}
+.Edit_Schedule_Modal .editScheduleContainer {
+  margin: 2rem 5rem;
+  width: calc(100vw - 10rem);
+  height: fit-content;
+}
+.Edit_Schedule_Modal .addToScheduleCommand {
+  width: calc(100vw - 10rem);
+  height: fit-content;
+}
+
+.Table_bookings {
+  width: 50vw;
+}
